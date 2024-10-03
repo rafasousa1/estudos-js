@@ -1,26 +1,38 @@
-// 1) ESTRUTURA EM JS QUE SE TRABALHA COM Dicionários Chave-valor
-// 2) E esse par 'chave-valor' é chamado de propriedade (sendo as chaves o NOME, e o valor o VALOR que nem de uma variável)
-// 3) Diferente dos arrays eles não possuem sequência
-// 4) E a propriedade pode ter string números bools como chave
-// 5) "let objeto = {}"
+// 1) Permite com que ENCAPSULE todo um conjunto de dados referente a uma entidade em uma coisa só
+// 2) E a propriedade pode ter string números bools como chave
+// 3) SINTAXE -> "const objeto = {}"
 
-let pessoa = {
+const dadosRafa = {
     nome: 'Rafael',
-    idade: '17',
+    idade: 17,
+    endereco: 'Rua dos Livros',
+    identidade: 543212345,
 }
 
-pessoa.idade = 20 // alterando a idade
-pessoa.sobrenome = 'Sousa' // adicionando uma nova propriedade
+console.log(`Dados do Rafa
+    Nome: ${dadosRafa.nome}
+    Idade: ${dadosRafa.idade}
+    Endereço: ${dadosRafa.endereco}
+    Identidade: ${dadosRafa.identidade}`) // Mostrar no console uma propiedade específica do objeto
 
+// Podemos também fazer objetos dentro de um objeto
 
-console.log(pessoa.nome); // Acessando a propriedade 'nome'
-
-// Iterando sobre propriedade
-for(let chave in pessoa) { // Passando por cada propriedade do objeto "pessoa" printando nome e valor dentro
-    console.log(chave + ": " + pessoa[chave])
+const usuario = {
+    nome: 'Marcos',
+    idade: 24,
+    endereco: {
+        rua: 'Rua dos Vasos',
+        numeroRua: 23
+    },
 }
 
-let outraPessoa = pessoa
-outrapessoa.nome = "Mario"
-console.log(pessoa.nome) // 'outraPessoa' é uma referência ao mesmo objeto que 'pessoa'. Ao mudar nome através de 'outraPessoa', o objeto original 'pessoa' também é alterado.
+// Podemos também escrever funções
 
+const pessoa = {
+    nome: 'Mateus',
+    idade: 27,
+    dizerOla() {
+        console.log(`Olá meu nome é ${this.nome}`) // O 'this' quer dizer que está chamando a propriedade DESSE objeto
+    }
+}
+pessoa.dizerOla()
