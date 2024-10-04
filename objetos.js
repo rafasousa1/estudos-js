@@ -36,3 +36,11 @@ const pessoa = {
     }
 }
 pessoa.dizerOla()
+
+// Adicionando dados em apenas uma linha em um Array com objetos
+
+const users = [
+    {nome: 'José', idade: 32, estado: 'São Paulo'},
+    {nome: 'Paulo', idade: 15, estado: 'Minas Gerais'},
+    {nome: 'André', idade: 23, estado: 'Bahia'},
+]

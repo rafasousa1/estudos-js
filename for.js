@@ -30,8 +30,3 @@ for (let i = 1; i <= 10; i++) {
     lista.push(i)
 }
 /////////////
-let numero2 = prompt("Digite um número para sua tabuada:")
-
-lista.forEach(function(item) {
-    alert(numero2 * item)
-})
