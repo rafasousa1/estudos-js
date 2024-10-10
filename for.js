@@ -5,15 +5,11 @@ for (let i = 0; i < nome.length; i++) {
     alert(nome[i])
 }
 /////////////
+num = 6
 
-const numero = parseFloat(prompt("Digite um número para sua tabuada"))
-let resultado = ""
-
-for (let fator = 1; fator <= 20; fator++) {
-    resultado += "- " + numero + "X" + fator + " = " + (numero * fator) + "\n"
+for (let i = 0; i <= 10; i++) {
+    console.log(num * i)
 }
-
-alert("Resultado da tabuada do número " + numero + ":\n\n" + resultado)
 /////////////
 
 for (let i = 10; i >= 1; i--) {
