@@ -1,0 +1,40 @@
+[{
+    "time" : "Corinthians",
+    "estadio" : {
+        "nome" : "Neo Química Arena",
+        "publico_recorde" : 63.267,
+        "capacidade" : null
+    },
+    "jogadores" : [{
+        "nome" : "Hugo Souza",
+        "idade" : 25,
+        "titular" : true,
+        "times" : ["Vasco", "Fluminense", "Flamengo", "Corinthians"]
+    },
+    {
+        "nome" : "Yuri Alberto",
+        "idade" : 23,
+        "titular" : true,
+        "times" : ["Santos", "Internacional", "Zenit", "Corinthians"]
+    }]
+},
+{
+    "time" : "Palmeiras",
+    "estadio" : {
+        "nome" : "Alianz Parque",
+        "publico_recorde" : 41.457,
+        "capacidade" : null
+    },
+    "jogadores" : [{
+        "nome" : "Weverton",
+        "idade" : 36,
+        "titular" : true,
+        "times" : ["Corinthians", "Remo", "Oeste", "America de Natal", "Botafogo-SP", "Portuguesa", "Atlético Paranaense", "Palmeiras"]
+    },
+    {
+        "nome" : "Raphael Veiga",
+        "idade" : 29,
+        "titular" : true,
+        "times" : ["Coritiba", "Atlético Paranaense", "Palmeiras"]
+    }]
+}]
